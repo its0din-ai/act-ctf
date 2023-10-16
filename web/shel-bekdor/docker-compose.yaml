@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  bekdor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bekdor
+    ports:
+      - "13372:13372"
