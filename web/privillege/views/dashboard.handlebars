@@ -1,0 +1,53 @@
+<div>
+  {{#if isAdmin}}
+    <h1>Hai Admin!</h1>
+    <div class="card" style="width: 45rem;">
+      <img
+        src="https://miro.medium.com/v2/resize:fit:788/1*XkmnsJ6Joa6EDFVGUw0tfA.png"
+        class="mt-3"
+        width="30%"
+      />
+      <div class="card-body mt-2">
+        <p class="card-text">JSON Web Token (JWT) adalah sebuah standar terbuka
+          (RFC 7519) yang digunakan untuk mengirimkan informasi antara
+          pihak-pihak dalam bentuk objek JSON yang aman. JWT digunakan secara
+          luas dalam aplikasi web dan layanan web sebagai cara untuk
+          mengotentikasi dan mengotorisasi pengguna, serta mengirimkan data
+          tambahan yang diperlukan. JWT sering digunakan dalam implementasi
+          otentikasi tunggal (single sign-on) dan sebagai cara untuk mengamankan
+          komunikasi antara berbagai komponen aplikasi.</p>
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+          <div>
+            FLAG ::: ACTCTF{cd0357db00fc9188d04a705f1d786cd8}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <h1>Hai Guest!</h1>
+    <div class="card" style="width: 45rem;">
+      <img
+        src="https://miro.medium.com/v2/resize:fit:788/1*XkmnsJ6Joa6EDFVGUw0tfA.png"
+        class="mt-3"
+        width="30%"
+      />
+      <div class="card-body mt-2">
+        <p class="card-text">JSON Web Token (JWT) adalah sebuah standar terbuka
+          (RFC 7519) yang digunakan untuk mengirimkan informasi antara
+          pihak-pihak dalam bentuk objek JSON yang aman. JWT digunakan secara
+          luas dalam aplikasi web dan layanan web sebagai cara untuk
+          mengotentikasi dan mengotorisasi pengguna, serta mengirimkan data
+          tambahan yang diperlukan. JWT sering digunakan dalam implementasi
+          otentikasi tunggal (single sign-on) dan sebagai cara untuk mengamankan
+          komunikasi antara berbagai komponen aplikasi.</p>
+      </div>
+    </div>
+  {{/if}}
+  <div class="d-grid gap-2 col-6 mx-auto mt-3">
+    <a
+      class="btn btn-sm btn-outline-danger"
+      role="button"
+      href="/logout"
+    >Logout</a>
+  </div>
+</div>

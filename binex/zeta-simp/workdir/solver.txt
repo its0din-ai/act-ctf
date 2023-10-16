@@ -1,0 +1,3 @@
+insert variable name for a comparison (python2 bug).
+insert command injection on the echo {0} code.
+|   example: '& id & whoami & uname -a & echo "a"'

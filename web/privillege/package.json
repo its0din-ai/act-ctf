@@ -1,0 +1,15 @@
+{
+  "name": "jwt-ctf",
+  "version": "1.0.0",
+  "description": "AnonCyberTeam JWT Attacks",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "express-handlebars": "^5.3.3",
+    "cookie-parser": "^1.4.5"
+  }
+}

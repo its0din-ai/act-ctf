@@ -1,0 +1,11 @@
+service sanca
+{
+    disable     = no
+    type        = UNLISTED
+    socket_type = stream
+    protocol    = tcp
+    port        = 13372
+    wait        = no
+    user        = kobo
+    server      = /app/run
+}

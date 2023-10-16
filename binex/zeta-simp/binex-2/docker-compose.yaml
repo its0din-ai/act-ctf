@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  kobo-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kobo-container
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    ports:
+      - "13372:13372"
+    restart: "always"
