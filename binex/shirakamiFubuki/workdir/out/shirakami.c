@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 int main() {
-    int makanan = 0x313337FF;
+    int makanan = 0xBEEEEEEF;
     char buf[40];
 
     printf("minta mkn bang, 7 hari blm mkn: ");
     fflush(stdout);
     fgets(buf, 45, stdin);
 
-    if ((makanan == 0x313337FF) && (makanan != 0xDEADFACE))
+    if ((makanan == 0xBEEEEEEF) && (makanan != 0xDEADFACE))
         printf("\ngk enak, gw maunya: [%p]\n", (void*)makanan);
         fflush(stdout);
 
-    if ((makanan != 0x313337FF) && (makanan != 0xDEADFACE))
+    if ((makanan != 0xBEEEEEEF) && (makanan != 0xDEADFACE))
         printf ("\nNah, [%p] ini ok lah yaaa.\ntapi gw masih kurang suka sih\n", (void*)makanan);
         fflush(stdout);
 
