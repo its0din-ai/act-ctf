@@ -7,4 +7,5 @@ RUN chown root:root /fl49.txt
 RUN chmod 444 /fl49.txt
 
 EXPOSE 3000
+USER www-data
 CMD ["php", "-S", "0.0.0.0:3000", "-t", "/var/www/html/"]
