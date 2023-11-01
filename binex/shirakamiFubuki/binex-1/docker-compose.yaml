@@ -9,5 +9,5 @@ services:
     environment:
       - DEBIAN_FRONTEND=noninteractive
     ports:
-      - "13371:13371"
+      - "13370:13370"
     restart: "always"

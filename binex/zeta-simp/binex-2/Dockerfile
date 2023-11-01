@@ -17,5 +17,5 @@ RUN chown -R root:root /flag.txt
 RUN chmod 444 /flag.txt
 RUN chmod 500 /etc/xinetd.d/xinetd && chmod 500 /usr/bin/start && \
     chmod +x run
-EXPOSE 13372
+EXPOSE 13371
 ENTRYPOINT ["/usr/bin/start"]

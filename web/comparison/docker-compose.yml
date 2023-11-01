@@ -1,10 +1,8 @@
 version: '3'
-
 services:
-  bekdor:
+  inclusion:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: bekdor
     ports:
-      - "8003:80"
+      - "8004:80"
