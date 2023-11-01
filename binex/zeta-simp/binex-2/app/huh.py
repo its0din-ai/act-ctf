@@ -17,7 +17,7 @@ class Unbuffered(object):
 sys.stdout = Unbuffered(sys.stdout)
 
 secret = randint(0, 666666)
-print('46esaB Tool\nBy: Vestia Zeta 1337')
+print('46esaB Tool\nBy: Kobo Hengker')
 try:
     key = input("[>] Masukkan PIN: ")
     if key == secret:
@@ -27,6 +27,7 @@ try:
         out = proc.communicate()[0]
         print("[*] Cipher: ", out)
     else:
-        print("[-] Akses Ditolak! You need to SIMP Vestia Zeta first!")
+        print("[-] Akses Ditolak! You need to SIMP Kobo first!")
+        print("[!] Here: https://sociabuzz.com/kobokanaeru/tribe")
 except Exception:
     pass
