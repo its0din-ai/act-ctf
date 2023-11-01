@@ -7,4 +7,4 @@ services:
       dockerfile: Dockerfile
     container_name: bekdor
     ports:
-      - "8003:80"
+      - "8003:3000"
