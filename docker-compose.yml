@@ -2,13 +2,13 @@ version: '3'
 
 services:
 # WEB
-  bekdor:
+  inclusion:
     build:
-      context: ./web/shel-bekdor
+      context: ./web/inclusion
       dockerfile: Dockerfile
-    container_name: WEB-bekdor
+    container_name: WEB-inclusion
     ports:
-      - "8003:3000"
+      - "8001:80"
     restart: unless-stopped
   privilege:
     build:
@@ -18,13 +18,13 @@ services:
     ports:
       - "8002:3000"
     restart: unless-stopped
-  inclusion:
+  bekdor:
     build:
-      context: ./web/inclusion
+      context: ./web/shel-bekdor
       dockerfile: Dockerfile
-    container_name: WEB-inclusion
+    container_name: WEB-bekdor
     ports:
-      - "8001:80"
+      - "8003:3000"
     restart: unless-stopped
   comparison:
     build:
