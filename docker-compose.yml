@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+# WEB
+  bekdor:
+    build:
+      context: ./web/shel-bekdor
+      dockerfile: Dockerfile
+    container_name: WEB-bekdor
+    ports:
+      - "8003:3000"
+    restart: unless-stopped
+  privilege:
+    build:
+      context: ./web/privillege
+      dockerfile: Dockerfile
+    container_name: WEB-privilege
+    ports:
+      - "8002:3000"
+    restart: unless-stopped
+  inclusion:
+    build:
+      context: ./web/inclusion
+      dockerfile: Dockerfile
+    container_name: WEB-inclusion
+    ports:
+      - "8001:80"
+    restart: unless-stopped
+  comparison:
+    build:
+      context: ./web/comparison
+      dockerfile: Dockerfile
+    container_name: WEB-comparison
+    ports:
+      - "8004:80"
+    restart: unless-stopped
+
+# BINEX
+  kobo-container:
+    build:
+      context: ./binex/animeBiru
+      dockerfile: Dockerfile
+    container_name: PWN-kobo
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    ports:
+      - "13371:13371"
+    restart: unless-stopped
+  fubuki-container:
+    build:
+      context: ./binex/shirakamiFubuki
+      dockerfile: Dockerfile
+    container_name: PWN-fubuki
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    ports:
+      - "13370:13370"
+    restart: unless-stopped
+  
